@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'BTDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'MJExtension', '~> 3.1.2'
+  pod 'MJRefresh', '~> 3.2.0'
+  pod 'SocketRocket', '~> 0.5.1'
+  pod 'VerifyCode', '~> 3.1.4'
+  pod 'Masonry', '~> 1.1.0'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'SDAutoLayout', '~> 2.1.3'
+  pod 'RESideMenu', '~> 4.0.7'
+  pod 'Reachability'
+
+end
