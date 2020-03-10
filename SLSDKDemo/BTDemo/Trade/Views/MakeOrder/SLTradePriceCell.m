@@ -108,8 +108,8 @@
         self.countLabel.text = model.qty;
     }
     
-    if (model.max_volume != 0) {
-        CGFloat w = (model.qty.doubleValue / model.max_volume.doubleValue) * self.contentView.sl_width;
+    if (model.sumVolNum != 0 ) {
+        CGFloat w = (model.qty.doubleValue / model.sumVolNum.doubleValue) * self.contentView.sl_width;
         [self.countBackgroundView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.width.mas_equalTo(w);
         }];
