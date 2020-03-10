@@ -17,6 +17,8 @@
 #define KEY_USER_TOKEN                      [NSString stringWithFormat:@"%@-Token",[SLPrivateConfig sharedConfig].host_Header]
 #define KEY_USER_SS_ID                      [NSString stringWithFormat:@"%@-Ssid",[SLPrivateConfig sharedConfig].host_Header]
 #define KEY_USER_U_ID                       [NSString stringWithFormat:@"%@-Uid",[SLPrivateConfig sharedConfig].host_Header]
+#define KEY_Accesskey                       [NSString stringWithFormat:@"%@-Accesskey",[SLPrivateConfig sharedConfig].host_Header]
+#define KEY_ExpiredTs                       [NSString stringWithFormat:@"%@-ExpiredTs",[SLPrivateConfig sharedConfig].host_Header]
 #define KEY_USER_TS                         [NSString stringWithFormat:@"%@-Ts",[SLPrivateConfig sharedConfig].host_Header]
 #define KEY_USER_SIGN                       [NSString stringWithFormat:@"%@-Sign",[SLPrivateConfig sharedConfig].host_Header]
 #define KEY_DEVICE_UDID                     [NSString stringWithFormat:@"%@-udid",[SLPrivateConfig sharedConfig].host_Header]

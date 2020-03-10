@@ -156,6 +156,7 @@ typedef NS_ENUM(NSInteger, BTOrderViewStatus) {
 @property (nonatomic, copy) NSString * feeCoinCode;
 @property (nonatomic, copy) NSString * doneFee;
 @property (nonatomic, copy) NSString * created_at;
+@property (nonatomic, copy) NSString * updated_at;
 @property (nonatomic, copy) NSString * finished_at;
 @property (nonatomic, assign) BTContractOrderStatus status;
 @property (nonatomic, assign) BTContractOrderErrNO errorno;

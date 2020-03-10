@@ -11,4 +11,6 @@
 
 #import "BTBasePath.h"
 
+#define isSwapCloud 1
+
 #endif /* BTUrlDef_h */

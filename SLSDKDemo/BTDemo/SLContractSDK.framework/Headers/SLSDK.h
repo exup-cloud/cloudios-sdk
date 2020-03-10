@@ -30,7 +30,7 @@ typedef void(^SLRequestCallBack)(id result,NSError *error);
 /**
  *  @brief      初始化SDK基本数据信息 （AppDelegate中调用）
  *  @param      appId  当前应用
- *  @param      launchOption 参数格式 {base_host: xx, host_Header : xx, PRIVATE_KEY: xx}
+ *  @param      launchOption 参数格式 {base_host: xx, host_Header : xx, PRIVATE_KEY: xx}   合约云用户 {base_host: xx, host_Header : xx}
  */
 - (void)sl_startWithAppID:(NSString *)appId launchOption:(NSDictionary *)launchOption callBack:(SLRequestCallBack)callBack;
 

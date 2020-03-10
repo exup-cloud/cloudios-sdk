@@ -11,7 +11,8 @@
 #import "SLContractMarketController.h"
 #import "SLLoginController.h"
 
-#define SL_Web_Socket_HOST    @"wss://api.tigermex.com/wsswap/realTime"
+#define SL_Base_HOST                        @"http://co.mybts.info/"
+#define SL_Web_Socket_HOST                  @"ws://ws3.mybts.info/wsswap/realTime"
 #define LAUNGUAGE_RES                       @"languageRes.plist"
 @interface AppDelegate ()
 
@@ -24,9 +25,7 @@
     // 连接 socket
     [[SLContractSocketManager sharedManager] SRWebSocketOpenWithURLString:SL_Web_Socket_HOST];
     
-    NSString *urlString = @"https://api.tigermex.com";
-    [[SLSDK sharedInstance] sl_startWithAppID:@"Test" launchOption:@{@"base_host": urlString,@"host_Header":@"Tmex",@"PRIVATE_KEY":@"OZ1WNXAlbe84Kpq8"} callBack:^(id result, NSError *error) {
-        SLLog(@"******** SDK 初始化 result: %@", result);
+    [[SLSDK sharedInstance] sl_startWithAppID:@"Test" launchOption:@{@"base_host": SL_Base_HOST,@"host_Header":@"EX"} callBack:^(id result, NSError *error) {
         NSString *lanpath = [[NSBundle mainBundle] pathForResource:LAUNGUAGE_RES ofType:nil];
         NSDictionary *landata = [NSDictionary dictionaryWithContentsOfFile:lanpath];
         NSString *currentLanguage =[[BTLanguageTool sharedInstance] getCurrentLanguage];
@@ -36,7 +35,6 @@
         if (landata) {
             [BTLanguageTool sharedInstanceWithLanguage:landata[currentLanguage]];
         }
-        
         
         self.window = [[UIWindow alloc] initWithFrame:SL_SCREEN_BOUNDS];
         [self.window makeKeyAndVisible];

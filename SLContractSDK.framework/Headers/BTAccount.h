@@ -32,5 +32,9 @@ typedef NS_ENUM(NSInteger, BTAccountStatusType) {
 @property (nonatomic, assign) NSInteger account_type;
 @property (nonatomic, assign) BTAccountStatusType status;
 @property (nonatomic, copy) NSNumber *account_id;
+/// 从EXUP系统申请而来
+@property (nonatomic, copy) NSString *access_key;
+/// 过期时间  EXUP合作交易所获取
+@property (nonatomic, copy) NSString *expiredTs;
 
 @end

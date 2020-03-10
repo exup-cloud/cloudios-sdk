@@ -51,6 +51,7 @@ typedef NS_ENUM(NSInteger, BTPositionStatus) {
 @property (nonatomic, assign) BTPositionStatus status;         // 状态
 @property (nonatomic, copy) NSDate *createdAt;
 @property (nonatomic, copy) NSDate *updatedAt;
+@property (nonatomic, copy) NSString *updated_at;
 @property (nonatomic, copy) NSString *positionValue; // 仓位价值
 @property (nonatomic, strong) BTContractsModel *contractInfo;
 
