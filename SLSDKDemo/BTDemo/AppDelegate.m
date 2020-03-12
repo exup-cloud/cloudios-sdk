@@ -25,7 +25,7 @@
     // 连接 socket
     [[SLContractSocketManager sharedManager] SRWebSocketOpenWithURLString:SL_Web_Socket_HOST];
     
-    [[SLSDK sharedInstance] sl_startWithAppID:@"Test" launchOption:@{@"base_host": SL_Base_HOST,@"host_Header":@"EX"} callBack:^(id result, NSError *error) {
+    [[SLSDK sharedInstance] sl_startWithAppID:@"Demo" launchOption:@{@"base_host": SL_Base_HOST,@"host_Header":@"EX"} callBack:^(id result, NSError *error) {
         NSString *lanpath = [[NSBundle mainBundle] pathForResource:LAUNGUAGE_RES ofType:nil];
         NSDictionary *landata = [NSDictionary dictionaryWithContentsOfFile:lanpath];
         NSString *currentLanguage =[[BTLanguageTool sharedInstance] getCurrentLanguage];
