@@ -59,8 +59,8 @@
     [[SLPlatformSDK sharedInstance] sl_loadUserContractPerpotyCallBack:^(NSArray<BTItemCoinModel *> *assets) {
         // 订阅合约资产信息
         [[SLSocketDataManager sharedInstance] sl_subscribeContractUnicastData];
-        [self.navigationController pushViewController:[SLSelectController new] animated:YES];
     }];
+     [self.navigationController pushViewController:[SLSelectController new] animated:YES];
 }
 
 @end

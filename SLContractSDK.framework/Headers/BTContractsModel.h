@@ -74,6 +74,7 @@ typedef NS_ENUM(NSInteger, BTContractOrderType) {
 @property (nonatomic, assign) int64_t settlement_interval;  // 交割周期（秒）
 @property (nonatomic, copy) NSString *min_leverage;         // 支持的最小杠杆
 @property (nonatomic, copy) NSString *max_leverage;         // 支持的最大杠杆
+@property (nonatomic, copy) NSString *default_leverage;         // 支持的最大杠杆
 
 @property (nonatomic, strong) NSArray <NSString *>*leverageArr;
 
