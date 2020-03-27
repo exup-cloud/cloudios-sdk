@@ -50,11 +50,14 @@ typedef NS_ENUM(NSInteger, BTContractOrderErrNO) {
     BTContractOrderErrCancel,           // 订单被取消
     BTContractOrderErrTimeout,          // 订单超时,暂时不用
     BTContractOrderErrASSETS,           // 用户资产不够,转撤销
+    BTContractOrderErrFREEZE,            // 用户冻结资产不够
     BTContractOrderErrUNDO,             // 系统部分转撤销
     BTContractOrderErrCLOSE,            // 部分平仓导致的部分转撤销
     BTContractOrderErrReduce,           // 自动减仓导致的部分转撤销
     BTContractOrderErrCompensate,       // 盈利补偿导致的部分转撤销(暂时没有用)
     BTContractOrderErrPositionErr,      // 仓位错误导致的部分转撤销
+    BTContractOrderErrFORBBIDN,         // 类型非法
+    BTContractOrderErrOPPSITE           // 反方向订单存在
 };
 
 // 订单状态
@@ -191,6 +194,8 @@ typedef NS_ENUM(NSInteger, BTOrderViewStatus) {
 
 @property (nonatomic, copy) NSString *way;
 
+@property (nonatomic, copy) NSNumber *time_in_force;
+
 /// 当前选中的精确位数
 @property (nonatomic, assign) BTDepthPriceDecimalType decimalPointum;
 
@@ -203,6 +208,7 @@ typedef NS_ENUM(NSInteger, BTOrderViewStatus) {
 + (instancetype)newContractOpenOrderWithContractId:(int64_t)instrument_id
                                           category:(BTContractOrderCategory)category
                                                way:(BTContractOrderWay)way
+                                       timeInForce:(NSNumber *)time_in_force
                                           openType:(BTPositionOpenType)position_type
                                           leverage:(NSString *)leverage
                                              price:(NSString *)price

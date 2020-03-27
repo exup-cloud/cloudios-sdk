@@ -48,8 +48,11 @@
 #define BTSocketDataUpdate_Contract_Trade_Notification      @"BTSocketDataUpdate_Contract_Trade_Notification"
 /// Contract私有信息更新
 #define BTSocketDataUpdate_Contract_Unicast_Notification    @"BTSocketDataUpdate_Contract_Unicast_Notification"
-///  K线数据
-#define SLSocketDataUpdate_QuoteBin_Notification    @"SLSocketDataUpdate_QuoteBin_Notification"
+/// K线数据
+#define SLSocketDataUpdate_QuoteBin_Notification            @"SLSocketDataUpdate_QuoteBin_Notification"
+
+/// 登录信息失效
+#define SLToken_Lose_effectiveness_Notification             @"SLToken_Lose_effectiveness_Notification"
 
 
 //! Project version number for SLContractSDK.

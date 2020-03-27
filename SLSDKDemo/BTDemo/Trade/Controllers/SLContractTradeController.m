@@ -61,9 +61,9 @@
     [self initUI];
     [self updateViewWithItemModel:self.itemModel];
     
-    [SLNoteCenter addObserver:self selector:@selector(didReceiveTickerDataFromSocket:) name:SLSocketDataUpdate_Ticker_Notification object:nil];
-    [SLNoteCenter addObserver:self selector:@selector(didReceiveDepthDataFromSocket:) name:SLSocketDataUpdate_Depth_Notification object:nil];
-    [SLNoteCenter addObserver:self selector:@selector(didReceiveContractDataFromSocket:) name:SLSocketDataUpdate_Unicast_Notification object:nil];
+    [SLNoteCenter addObserver:self selector:@selector(didReceiveTickerDataFromSocket:) name:BTSocketDataUpdate_Contract_Ticker_Notification object:nil];
+    [SLNoteCenter addObserver:self selector:@selector(didReceiveDepthDataFromSocket:) name:BTSocketDataUpdate_Contract_Depth_Notification object:nil];
+    [SLNoteCenter addObserver:self selector:@selector(didReceiveContractDataFromSocket:) name:BTSocketDataUpdate_Contract_Unicast_Notification object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
