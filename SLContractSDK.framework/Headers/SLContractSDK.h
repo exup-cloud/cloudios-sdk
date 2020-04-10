@@ -25,6 +25,9 @@
 #import "SLContractSocketManager.h"
 #import "SLMinePerprotyModel.h"
 #import "BTBasePath.h"
+#import "BTLineDataModel.h"
+#import "BTDrawLineDataCatch.h"
+#import "BTDrawLineManager.h"
 
 // BTNotification
 #define BTNoteCenter [NSNotificationCenter defaultCenter]

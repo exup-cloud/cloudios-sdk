@@ -50,14 +50,21 @@ typedef NS_ENUM(NSInteger, BTContractOrderErrNO) {
     BTContractOrderErrCancel,           // 订单被取消
     BTContractOrderErrTimeout,          // 订单超时,暂时不用
     BTContractOrderErrASSETS,           // 用户资产不够,转撤销
-    BTContractOrderErrFREEZE,            // 用户冻结资产不够
+    BTContractOrderErrFREEZE,           // 用户冻结资产不够
     BTContractOrderErrUNDO,             // 系统部分转撤销
     BTContractOrderErrCLOSE,            // 部分平仓导致的部分转撤销
     BTContractOrderErrReduce,           // 自动减仓导致的部分转撤销
     BTContractOrderErrCompensate,       // 盈利补偿导致的部分转撤销(暂时没有用)
     BTContractOrderErrPositionErr,      // 仓位错误导致的部分转撤销
     BTContractOrderErrFORBBIDN,         // 类型非法
-    BTContractOrderErrOPPSITE           // 反方向订单存在
+    BTContractOrderErrOPPSITE,          // 反方向订单存在
+    BTContractOrderErrFOK,              // FOK订单系统做的部分转撤销
+    BTContractOrderErrIOC,              // IOC订单系统做的部分转撤销
+    BTContractOrderErrMARKET,           // 市价订单未完成部分被系统部分转撤销
+    BTContractOrderErrPASSIVE,          // 被动成交订单系统做的部分转撤销
+    BTContractOrderErrFORCE,            // 强平订单系统做的部分转撤销
+    BTContractOrderErrPLAY,             // play订单系统做的部分转撤销
+    BTContractOrderErrHANDOVER,         // 由于合约发生交割,系统做的部分转撤销
 };
 
 // 订单状态
@@ -77,6 +84,13 @@ typedef NS_ENUM(NSInteger, BTContractOrderPriceType) {
 typedef NS_ENUM(NSInteger, BTContractOrderPriceWay) {
     BTContractOrderPriceWayUp = 1,              // 看涨
     BTContractOrderPriceWayDown = 2,           // 看跌
+};
+
+// 价类型
+typedef NS_ENUM(NSInteger, SLContractPlanProfitOrlossType) {
+    SLContractPlanNomalType = 0,              // 普通计划委托
+    SLContractPlanProfitType = 1,             // 止盈计划委托
+    SLContractPlanLossType = 2                // 止损计划委托
 };
 
 
@@ -196,6 +210,8 @@ typedef NS_ENUM(NSInteger, BTOrderViewStatus) {
 
 @property (nonatomic, copy) NSNumber *time_in_force;
 
+@property (nonatomic, assign) SLContractPlanProfitOrlossType type;
+
 /// 当前选中的精确位数
 @property (nonatomic, assign) BTDepthPriceDecimalType decimalPointum;
 
@@ -247,6 +263,19 @@ typedef NS_ENUM(NSInteger, BTOrderViewStatus) {
                                               price:(NSString *)price
                                                 vol:(NSString *)vol;
 
+/// 创建止盈止损订单
++ (instancetype)createPlanProfitOrLossOrderWithContractId:(int64_t)instrument_id
+                                                 category:(BTContractOrderCategory)category
+                                                      way:(BTContractOrderWay)side
+                                             trigger_type:(BTContractOrderPriceType)trigger_type
+                                                   trend:(BTContractOrderPriceWay)trend
+                                                 exec_px:(NSString *)exec_px
+                                                   cycle:(NSString *)cycle
+                                               positionID:(int64_t)position_id
+                                         profitOrLossType:(SLContractPlanProfitOrlossType)type
+                                                    price:(NSString *)price;
+
+
 // 开仓订单数据
 - (NSDictionary *)buildSubmitContractOpenOrderData;
 
@@ -258,6 +287,9 @@ typedef NS_ENUM(NSInteger, BTOrderViewStatus) {
 
 // 平仓订单数据
 - (NSDictionary *)buildSubmitContractCloseOrderData;
+
+// 止盈止损平仓数据
+- (NSDictionary *)buildProfitOrLossPlanContractCloseOrderData;
 
 // 用于深度
 + (instancetype)orderModelWith:(BTContractOrderModel *)orderModel;

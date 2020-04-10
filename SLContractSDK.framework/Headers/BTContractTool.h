@@ -119,6 +119,18 @@
                  success:(void (^)(NSNumber *))success
                  failure:(void (^)(id))failure;
 
+/// 提交止盈止损单
++ (void)submitProfitOrLossOrder:(BTContractOrderModel *)contractOrder
+                  assetPassword:(NSString *)assetPassword
+                        success:(void (^)(NSNumber *))success
+                        failure:(void (^)(id))failure;
+
+/// 取消止盈止损单
++ (void)cancelProfitOrLossOrder:(BTContractOrderModel *)contractOrder
+                  assetPassword:(NSString *)assetPassword
+                        success:(void (^)(NSNumber *))success
+                        failure:(void (^)(id))failure;
+
 // 提交合约订单
 + (void)sendContractsOrder:(BTContractOrderModel *)contractOrder
          contractOrderType:(BTContractOrderType)type

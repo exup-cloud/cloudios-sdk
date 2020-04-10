@@ -20,7 +20,8 @@ typedef NS_ENUM(NSInteger, BTContractRecordWay) {
     CONTRACT_WAY_TRANSFER_TO_CONTRACT,          //转出到合约账号
     CONTRACT_WAY_REDUCE_DEPOSIT_TRANSFER,       //减少保证金,将保证金从仓位转移到合约账户
     CONTRACT_WAY_INCREA_DEPOSIT_TRANSFER,       //增加保证金,将合约账户的资产转移到仓位保证金
-    CONTRACT_WAY_POSITION_FUND_FEE              //仓位的资金费用
+    CONTRACT_WAY_POSITION_FUND_FEE,             //仓位的资金费用
+    CONTRACT_WAY_AIR_DROP = 21                      //空投
 };
 
 @interface BTContractLipRecordModel : NSObject

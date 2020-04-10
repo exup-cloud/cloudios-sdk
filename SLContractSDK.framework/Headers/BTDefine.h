@@ -106,6 +106,10 @@ return;\
 #define CALL_BACK_FAILURE(ERR)\
 if ( nil != failure) {\
 failure(ERR);\
+}\
+else\
+{\
+failure(nil);\
 }
 
 #define SHOW_ERROR_MESSAGE(error)\
