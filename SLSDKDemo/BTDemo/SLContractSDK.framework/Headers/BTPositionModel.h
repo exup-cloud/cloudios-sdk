@@ -61,7 +61,11 @@ typedef NS_ENUM(NSInteger, BTPositionStatus) {
 
 @property (nonatomic, copy) NSString *closePrice;
 @property (nonatomic, copy) NSString *closeVol;
+@property (nonatomic, assign) int errorno;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
+
+/// 修改杠杆计算仓位保证金
+- (NSString *)carculatePositionIMWith:(NSString *)level;
 
 @end

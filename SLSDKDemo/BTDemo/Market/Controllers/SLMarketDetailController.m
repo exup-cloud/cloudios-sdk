@@ -13,7 +13,7 @@
 #import "SLContractTradeController.h"
 #import "SLButton.h"
 #import "BTShareView.h"
-#import "BTDrawLineManager.h"
+#import <SLContractSDK/BTDrawLineManager.h>
 #import "SLMarketDetailIndexController.h"
 #import "BTUtility.h"
 
@@ -205,7 +205,7 @@
 
 /// 根据 k 线数据类型更新数据和视图
 - (void)requestAndUpdateLineChartViewWithKLineDataType:(SLStockLineDataType)kLineDataType {
-    [[BTDrawLineManager shareManager] loadDataWithCoin:self.itemModel.symbol contractID:self.itemModel.instrument_id dataType:kLineDataType success:^(NSArray<BTItemModel *> *itemModelArray, BOOL isCotainNewData, BOOL isFirstData) {
+    [[BTDrawLineManager shareManager] loadDataWithCoin:@"" contractID:self.itemModel.instrument_id type:3 count:kLineDataType success:^(NSArray<BTItemModel *> *itemModelArray, BOOL isCotainNewData, BOOL isFirstData) {
         if (kLineDataType != self.kLineDataType) {
             return;
         }

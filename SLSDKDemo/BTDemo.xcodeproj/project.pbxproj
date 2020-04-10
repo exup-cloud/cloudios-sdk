@@ -10,8 +10,6 @@
 		57F6AF679CA37C087B39871E /* Pods_BTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4749FE951C072F23BC3888 /* Pods_BTDemo.framework */; };
 		CB367D1C23FE546B00AAA33E /* SLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D1B23FE546B00AAA33E /* SLConfig.m */; };
 		CB367D1F23FE57CA00AAA33E /* BTUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D1E23FE57CA00AAA33E /* BTUtility.m */; };
-		CB367D2823FE582400AAA33E /* BTDrawLineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D2223FE582400AAA33E /* BTDrawLineManager.m */; };
-		CB367D2923FE582400AAA33E /* BTDrawLineDataCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D2623FE582400AAA33E /* BTDrawLineDataCatch.m */; };
 		CB367D2C23FE5D5A00AAA33E /* BTBidAskCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D2B23FE5D5A00AAA33E /* BTBidAskCellModel.m */; };
 		CB367D2F23FE5DC700AAA33E /* BTDealBackCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D2E23FE5DC700AAA33E /* BTDealBackCellModel.m */; };
 		CB367D3223FE755500AAA33E /* BTSettingBingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D3123FE755500AAA33E /* BTSettingBingTool.m */; };
@@ -168,10 +166,6 @@
 		CB367D1B23FE546B00AAA33E /* SLConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLConfig.m; sourceTree = "<group>"; };
 		CB367D1D23FE57CA00AAA33E /* BTUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTUtility.h; sourceTree = "<group>"; };
 		CB367D1E23FE57CA00AAA33E /* BTUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTUtility.m; sourceTree = "<group>"; };
-		CB367D2223FE582400AAA33E /* BTDrawLineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDrawLineManager.m; sourceTree = "<group>"; };
-		CB367D2323FE582400AAA33E /* BTDrawLineDataCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDrawLineDataCatch.h; sourceTree = "<group>"; };
-		CB367D2423FE582400AAA33E /* BTDrawLineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDrawLineManager.h; sourceTree = "<group>"; };
-		CB367D2623FE582400AAA33E /* BTDrawLineDataCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDrawLineDataCatch.m; sourceTree = "<group>"; };
 		CB367D2A23FE5D5A00AAA33E /* BTBidAskCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBidAskCellModel.h; sourceTree = "<group>"; };
 		CB367D2B23FE5D5A00AAA33E /* BTBidAskCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTBidAskCellModel.m; sourceTree = "<group>"; };
 		CB367D2D23FE5DC700AAA33E /* BTDealBackCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDealBackCellModel.h; sourceTree = "<group>"; };
@@ -469,10 +463,6 @@
 				CB367D2E23FE5DC700AAA33E /* BTDealBackCellModel.m */,
 				CB367D2A23FE5D5A00AAA33E /* BTBidAskCellModel.h */,
 				CB367D2B23FE5D5A00AAA33E /* BTBidAskCellModel.m */,
-				CB367D2223FE582400AAA33E /* BTDrawLineManager.m */,
-				CB367D2323FE582400AAA33E /* BTDrawLineDataCatch.h */,
-				CB367D2423FE582400AAA33E /* BTDrawLineManager.h */,
-				CB367D2623FE582400AAA33E /* BTDrawLineDataCatch.m */,
 			);
 			path = BTDetailTableTool;
 			sourceTree = "<group>";
@@ -1350,7 +1340,6 @@
 				F4182781236FF9CF00B9CAC5 /* SLContractDoneRecordCell.m in Sources */,
 				F418277C236FF9CF00B9CAC5 /* SLContractListHeaderView.m in Sources */,
 				F4182796236FF9CF00B9CAC5 /* SLMineAssetsTableView.m in Sources */,
-				CB367D2923FE582400AAA33E /* BTDrawLineDataCatch.m in Sources */,
 				F4182790236FF9CF00B9CAC5 /* SLMineRecordController.m in Sources */,
 				F418277D236FF9CF00B9CAC5 /* SLContractListCell.m in Sources */,
 				CB367D2F23FE5DC700AAA33E /* BTDealBackCellModel.m in Sources */,
@@ -1397,7 +1386,6 @@
 				F4182748236FF9CF00B9CAC5 /* BTSegment.m in Sources */,
 				F41827AB236FF9CF00B9CAC5 /* UIImage+SLResize.m in Sources */,
 				F4182612236FF95800B9CAC5 /* SLSelectController.m in Sources */,
-				CB367D2823FE582400AAA33E /* BTDrawLineManager.m in Sources */,
 				CB367D1F23FE57CA00AAA33E /* BTUtility.m in Sources */,
 				F418275E236FF9CF00B9CAC5 /* UIBezierPath+curved.m in Sources */,
 				F4182756236FF9CF00B9CAC5 /* BTFuturesBottomHeaderView.m in Sources */,

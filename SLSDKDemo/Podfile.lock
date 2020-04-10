@@ -1,22 +1,22 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.0):
+    - AFNetworking/NSURLSession (= 4.0.0)
+    - AFNetworking/Reachability (= 4.0.0)
+    - AFNetworking/Security (= 4.0.0)
+    - AFNetworking/Serialization (= 4.0.0)
+    - AFNetworking/UIKit (= 4.0.0)
+  - AFNetworking/NSURLSession (4.0.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.0)
+  - AFNetworking/Security (4.0.0)
+  - AFNetworking/Serialization (4.0.0)
+  - AFNetworking/UIKit (4.0.0):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
   - MJExtension (3.1.2)
-  - MJRefresh (3.2.0)
+  - MJRefresh (3.2.3)
   - Reachability (3.2)
   - RESideMenu (4.0.7)
   - SDAutoLayout (2.1.9)
@@ -24,7 +24,7 @@ PODS:
   - VerifyCode (3.1.4)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.2.1)
+  - AFNetworking
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.1.2)
   - MJRefresh (~> 3.2.0)
@@ -35,7 +35,7 @@ DEPENDENCIES:
   - VerifyCode (~> 3.1.4)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/CocoaPods/specs.git:
     - AFNetworking
     - Masonry
     - MJExtension
@@ -47,16 +47,16 @@ SPEC REPOS:
     - VerifyCode
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 81e8e411ced318561dd09334b0c83d8227cef79c
-  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   VerifyCode: e3a58ef5cfada013329981765015522ed3d5d51c
 
-PODFILE CHECKSUM: dec864cd67dc7f0dcec7c314f3e43efc470ee330
+PODFILE CHECKSUM: 72ad1e2021823114c6b9d2d24319d28a98796e20
 
 COCOAPODS: 1.8.4
