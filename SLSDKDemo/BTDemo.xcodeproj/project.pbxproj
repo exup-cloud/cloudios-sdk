@@ -12,7 +12,6 @@
 		CB367D1F23FE57CA00AAA33E /* BTUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D1E23FE57CA00AAA33E /* BTUtility.m */; };
 		CB367D2C23FE5D5A00AAA33E /* BTBidAskCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D2B23FE5D5A00AAA33E /* BTBidAskCellModel.m */; };
 		CB367D2F23FE5DC700AAA33E /* BTDealBackCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D2E23FE5DC700AAA33E /* BTDealBackCellModel.m */; };
-		CB367D3223FE755500AAA33E /* BTSettingBingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D3123FE755500AAA33E /* BTSettingBingTool.m */; };
 		CB367D3523FE75BA00AAA33E /* NSString+URLFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D3423FE75B900AAA33E /* NSString+URLFormat.m */; };
 		CB367D3823FE775800AAA33E /* NSString+SLHash.m in Sources */ = {isa = PBXBuildFile; fileRef = CB367D3723FE775800AAA33E /* NSString+SLHash.m */; };
 		CB367D3E23FE808A00AAA33E /* languageRes.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB367D3D23FE808900AAA33E /* languageRes.plist */; };
@@ -170,8 +169,6 @@
 		CB367D2B23FE5D5A00AAA33E /* BTBidAskCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTBidAskCellModel.m; sourceTree = "<group>"; };
 		CB367D2D23FE5DC700AAA33E /* BTDealBackCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDealBackCellModel.h; sourceTree = "<group>"; };
 		CB367D2E23FE5DC700AAA33E /* BTDealBackCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDealBackCellModel.m; sourceTree = "<group>"; };
-		CB367D3023FE755500AAA33E /* BTSettingBingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSettingBingTool.h; sourceTree = "<group>"; };
-		CB367D3123FE755500AAA33E /* BTSettingBingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSettingBingTool.m; sourceTree = "<group>"; };
 		CB367D3323FE75B900AAA33E /* NSString+URLFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLFormat.h"; sourceTree = "<group>"; };
 		CB367D3423FE75B900AAA33E /* NSString+URLFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLFormat.m"; sourceTree = "<group>"; };
 		CB367D3623FE775800AAA33E /* NSString+SLHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SLHash.h"; sourceTree = "<group>"; };
@@ -457,8 +454,6 @@
 		CB367D2023FE582400AAA33E /* BTDetailTableTool */ = {
 			isa = PBXGroup;
 			children = (
-				CB367D3023FE755500AAA33E /* BTSettingBingTool.h */,
-				CB367D3123FE755500AAA33E /* BTSettingBingTool.m */,
 				CB367D2D23FE5DC700AAA33E /* BTDealBackCellModel.h */,
 				CB367D2E23FE5DC700AAA33E /* BTDealBackCellModel.m */,
 				CB367D2A23FE5D5A00AAA33E /* BTBidAskCellModel.h */,
@@ -1379,7 +1374,6 @@
 				F4182763236FF9CF00B9CAC5 /* KLineTipBoardView.m in Sources */,
 				F4182744236FF9CF00B9CAC5 /* SLMarketDetailController.m in Sources */,
 				F41827A0236FF9CF00B9CAC5 /* UILabel+BTCreate.m in Sources */,
-				CB367D3223FE755500AAA33E /* BTSettingBingTool.m in Sources */,
 				F418274D236FF9CF00B9CAC5 /* BTFuturesTableView.m in Sources */,
 				CB367D1C23FE546B00AAA33E /* SLConfig.m in Sources */,
 				F41827B6236FF9CF00B9CAC5 /* SLButton.m in Sources */,

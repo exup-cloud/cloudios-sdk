@@ -10,7 +10,6 @@
 #import "BTNetsVerifyCodeTool.h"
 #import "SLContractMarketController.h"
 #import "SLSelectController.h"
-#import "BTSettingBingTool.h"
 #import "NSString+SLHash.h"
 
 @interface SLLoginController ()<SLFutureDataRefreshProtocol>
