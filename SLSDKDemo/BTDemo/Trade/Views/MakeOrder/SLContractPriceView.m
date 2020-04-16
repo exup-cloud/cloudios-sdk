@@ -70,6 +70,7 @@
     if ([self.delegate respondsToSelector:@selector(priceView_updateBuyPrice:sellPrice:)]) {
         [self.delegate priceView_updateBuyPrice:buyPrice sellPrice:sellPrice];
     }
+    self.priceTitleLabel.text = [NSString stringWithFormat:@"%@(%@)",Launguage(@"BT_MAIN_P"),itemModel.contractInfo.quote_coin];
 }
 
 /// 更新部分数据

@@ -50,9 +50,9 @@
     BTAccount *account = [[BTAccount alloc] init];
     // 账户 id, 如果没有, 可以不传
 //    account.Uid = @"2556353284";
-    account.Token = @"d48cf68a78114e107800269aa20b99b3";
-    account.access_key = @"72f9e158-6dc1-4154-92fb-47e0e959935a";
-    account.expiredTs = @"1758290096781000";
+    account.Token = @"50c89d7f14530e93f168ba5b6a4275c6";
+    account.access_key = @"7b58ed73-fe7b-40c8-bce2-73f49edda6db";
+    account.expiredTs = @"1759649735241000";
     
     [[SLPlatformSDK sharedInstance] sl_startWithAccountInfo:account];
     [[SLPlatformSDK sharedInstance] sl_loadUserContractPerpotyCallBack:^(NSArray<BTItemCoinModel *> *assets) {
