@@ -124,3 +124,11 @@
     5.BTMaskFutureTool中的futureArr(所有合约ticker数组)、USDTArr(USDT合约数组)、standardArr(币本位合约数组)、imitateArr(模拟合约数组)、futureDepth(深度列表)数组在请求到ticker、订阅合约ticker或者订阅深度后全程都是最新的数据，在监听到对应通知可直接获取数据
     6.BTMineAccountTool中的contractAccountArr在获取资产接口及订阅私有资产接口后也是全程同步最新数据可在监听到对应通知直接获取
     7.BTContractTool中也有对应的仓位数组，订单委托数组，订阅私有资产后也是全程同步最新数据
+
+# 9.0 新增止盈止损功能
+    1. 根据 SLContractPlanProfitOrlossType 枚举，判定获取到的计划委托是否是止盈止损委托
+    2. createPlanProfitOrLossOrderWithContractId 创建止盈止损单
+    3. BTContractTool.submitProfitOrLossOrder  提交止盈止损单
+    4. BTContractTool.cancelProfitOrLossOrder  取消止盈止损单
+
+    注意：当为止盈止损单子的时候数量显示100%
