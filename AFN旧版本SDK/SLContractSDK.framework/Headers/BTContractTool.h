@@ -133,6 +133,18 @@
                      success:(void (^)(NSNumber *))success
                      failure:(void (^)(id))failure;
 
+/// 提交止盈止损单
++ (void)submitProfitOrLossOrder:(BTContractOrderModel *)contractOrder
+                  assetPassword:(NSString *)assetPassword
+                        success:(void (^)(NSNumber *))success
+                        failure:(void (^)(id))failure;
+
+/// 取消止盈止损单
++ (void)cancelProfitOrLossOrder:(BTContractOrderModel *)contractOrder
+                  assetPassword:(NSString *)assetPassword
+                        success:(void (^)(NSNumber *))success
+                        failure:(void (^)(id))failure;
+
 // 获取合约的深度
 + (void)getContractDeapthWithContractID:(int64_t)instrument_id
                                   price:(NSString *)price
