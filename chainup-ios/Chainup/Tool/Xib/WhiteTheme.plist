@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>label</key>
+	<dict>
+		<key>titlecolor</key>
+		<string>#35476C</string>
+		<key>bodycolor</key>
+		<string>#8A99B8</string>
+		<key>bodydarkcolor</key>
+		<string>#7080A3</string>
+		<key>otcgray</key>
+		<string>#606C85</string>
+	</dict>
+	<key>nav</key>
+	<dict>
+		<key>bg</key>
+		<string>#0082E5</string>
+	</dict>
+	<key>tab</key>
+	<dict>
+		<key>bg</key>
+		<string>#091941</string>
+		<key>seperator</key>
+		<string></string>
+		<key>highlight</key>
+		<string></string>
+	</dict>
+	<key>view</key>
+	<dict>
+		<key>mask</key>
+		<string>#000000</string>
+		<key>highlight</key>
+		<string>#0082E5</string>
+		<key>bg</key>
+		<string>#FFFFFF</string>
+		<key>litebg</key>
+		<string>#F7F7F7</string>
+		<key>darkbg</key>
+		<string>#050F29</string>
+		<key>upcolor</key>
+		<string>#15CF98</string>
+		<key>downcolor</key>
+		<string>#F15758</string>
+		<key>seperator</key>
+		<string>#E5E5E5</string>
+		<key>border</key>
+		<string>#314167</string>
+	</dict>
+	<key>state</key>
+	<dict>
+		<key>success</key>
+		<string>#80C269</string>
+		<key>fail</key>
+		<string>#EF5A61</string>
+	</dict>
+</dict>
+</plist>

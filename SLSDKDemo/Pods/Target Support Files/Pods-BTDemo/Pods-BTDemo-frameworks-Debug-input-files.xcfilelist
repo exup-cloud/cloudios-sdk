@@ -1,9 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-BTDemo/Pods-BTDemo-frameworks.sh
-${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
-${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
-${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
-${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
-${BUILT_PRODUCTS_DIR}/RESideMenu/RESideMenu.framework
-${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework
-${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework
-${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework

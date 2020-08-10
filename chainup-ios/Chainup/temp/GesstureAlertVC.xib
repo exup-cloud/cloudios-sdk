@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GesstureAlertVC" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="IMG" destination="mK0-Xu-w9v" id="zl1-vX-UrS"/>
+                <outlet property="detailL" destination="E4h-6S-HEO" id="On4-kD-RRA"/>
+                <outlet property="imgVConstraintWidth" destination="pau-tj-BxY" id="fBV-of-gI4"/>
+                <outlet property="titleL" destination="rEj-Bc-zIP" id="zMc-ci-cak"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gC-em-9IY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指纹登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEj-Bc-zIP" customClass="CMLocalizedLabel">
+                            <rect key="frame" x="10" y="98" width="355" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您也可以在账户模块的安全设置中进行设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4h-6S-HEO">
+                            <rect key="frame" x="10" y="147.5" width="355" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="eMC-Ah-iSl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.38823529410000002" green="0.4549019608" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gesstureAlertView" translatesAutoresizingMaskIntoConstraints="NO" id="mK0-Xu-w9v">
+                            <rect key="frame" x="44" y="259.5" width="287" height="86"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="86" id="NYX-oh-YyA"/>
+                                <constraint firstAttribute="width" constant="287" id="pau-tj-BxY"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwM-ba-oVA" customClass="CMLocalizedButton">
+                            <rect key="frame" x="30" y="528" width="315" height="44"/>
+                            <color key="backgroundColor" red="0.15686274510000001" green="0.52156862749999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Xzb-BW-c0h"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                            <state key="normal" title="safety_action_activeFaceId">
+                                <color key="titleColor" red="0.98823529409999999" green="0.99215686270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="btn.highlight"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="Setting:" destination="-1" eventType="touchUpInside" id="UoV-x5-Ls9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alq-D5-teq" customClass="CMLocalizedButton">
+                            <rect key="frame" x="50" y="587" width="275" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="6AC-5i-r5Y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="safety_action_faceIdNextTime">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleC" value="btn.highlight"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="remove:" destination="-1" eventType="touchUpInside" id="lSB-BT-XWJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.031372549020000001" green="0.078431372550000003" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="chz-p7-7vf" firstAttribute="trailing" secondItem="E4h-6S-HEO" secondAttribute="trailing" constant="10" id="1cM-8P-NUU"/>
+                        <constraint firstItem="chz-p7-7vf" firstAttribute="trailing" secondItem="Alq-D5-teq" secondAttribute="trailing" constant="50" id="3G3-8o-SPR"/>
+                        <constraint firstItem="chz-p7-7vf" firstAttribute="trailing" secondItem="rEj-Bc-zIP" secondAttribute="trailing" constant="10" id="7h6-bC-Roz"/>
+                        <constraint firstItem="rEj-Bc-zIP" firstAttribute="centerX" secondItem="5gC-em-9IY" secondAttribute="centerX" id="7ll-hI-BwY"/>
+                        <constraint firstItem="mK0-Xu-w9v" firstAttribute="centerX" secondItem="5gC-em-9IY" secondAttribute="centerX" id="A0F-fH-UGm"/>
+                        <constraint firstItem="E4h-6S-HEO" firstAttribute="centerX" secondItem="5gC-em-9IY" secondAttribute="centerX" id="FXD-6r-GS3"/>
+                        <constraint firstItem="rEj-Bc-zIP" firstAttribute="leading" secondItem="chz-p7-7vf" secondAttribute="leading" constant="10" id="LVB-I3-i6y"/>
+                        <constraint firstItem="E4h-6S-HEO" firstAttribute="leading" secondItem="chz-p7-7vf" secondAttribute="leading" constant="10" id="OxH-69-AZc"/>
+                        <constraint firstItem="rEj-Bc-zIP" firstAttribute="top" secondItem="chz-p7-7vf" secondAttribute="top" constant="78" id="Wce-iJ-Fe0"/>
+                        <constraint firstItem="Alq-D5-teq" firstAttribute="leading" secondItem="chz-p7-7vf" secondAttribute="leading" constant="50" id="XtN-J4-09M"/>
+                        <constraint firstItem="E4h-6S-HEO" firstAttribute="top" secondItem="rEj-Bc-zIP" secondAttribute="bottom" constant="16" id="aaZ-ym-fyZ"/>
+                        <constraint firstItem="Alq-D5-teq" firstAttribute="top" secondItem="CwM-ba-oVA" secondAttribute="bottom" constant="15" id="bVn-ud-kfS"/>
+                        <constraint firstItem="chz-p7-7vf" firstAttribute="trailing" secondItem="CwM-ba-oVA" secondAttribute="trailing" constant="30" id="f8l-MF-BIW"/>
+                        <constraint firstItem="CwM-ba-oVA" firstAttribute="leading" secondItem="chz-p7-7vf" secondAttribute="leading" constant="30" id="gwM-hO-ero"/>
+                        <constraint firstItem="E4h-6S-HEO" firstAttribute="centerX" secondItem="5gC-em-9IY" secondAttribute="centerX" id="ip6-it-U5b"/>
+                        <constraint firstItem="chz-p7-7vf" firstAttribute="bottom" secondItem="Alq-D5-teq" secondAttribute="bottom" constant="60" id="m3U-eF-Ths"/>
+                        <constraint firstItem="mK0-Xu-w9v" firstAttribute="centerX" secondItem="5gC-em-9IY" secondAttribute="centerX" id="mcx-WF-GIS"/>
+                        <constraint firstItem="mK0-Xu-w9v" firstAttribute="top" secondItem="E4h-6S-HEO" secondAttribute="bottom" constant="100" id="qKQ-Ov-bCU"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="chz-p7-7vf"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5gC-em-9IY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Wu-O6-ped"/>
+                <constraint firstItem="5gC-em-9IY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PRa-ZV-RPW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5gC-em-9IY" secondAttribute="trailing" id="Tn6-GH-GJD"/>
+                <constraint firstAttribute="bottom" secondItem="5gC-em-9IY" secondAttribute="bottom" id="j80-Qm-nD6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gesstureAlertView" width="16" height="16"/>
+    </resources>
+</document>
